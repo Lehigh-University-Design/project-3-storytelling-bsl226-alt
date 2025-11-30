@@ -9,6 +9,14 @@
 /* Main styles */
 
 body {
+    font-family: 'Work Sans', sans-serif; /* added font (SEP 7) */
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    font-size: 1em;
+    margin: 0;
+
+    background-color: rgb(224, 221, 221);
 
 }
 
@@ -16,6 +24,147 @@ h1 {
 
 }
 
-p {
+/* Navigation Bar */
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 15px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0em;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+
+nav img {
+    /* display: inline-block; */
+    align-self: left;
+    width: auto;
+    height: 2.5em;
+    margin-right: 1em;  
+}
+
+nav h1 {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 2em;
+}
+
+nav h1 a {
+    text-decoration: inherit;
+    color: white;
+}
+
+nav h1 a:hover {
+    color: grey;
+}
+
+nav button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    /* background-color: #0056b3; */
+    background-color: rgb(224, 221, 221);
+}
+
+.Loomis {
+    background-color: rgb(26, 72, 137);
+}
+
+.Features {
+    background-color: rgb(250, 184, 184);
+}
+
+.Examples {
+    background-color: rgb(206, 60, 60);
+}
+
+/* Content Sections */
+
+#section1 {
+    text-align: left;
+    color: white;
+    margin: 5em;
+    padding: 1em;
+}
+
+#section1 h3 {
+    font-size: 5em;
+    font-style: bold;
+    padding: 0;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+#section2 {
+    text-align: left;
+    color: white;
+    margin: 5em;
+    padding: 1em;
+}
+
+#section2 h3 {
+    font-size: 5em;
+    font-style: bold;
+    padding: 0;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+.post {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 10em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    font-family: "Georgia", serif;
+}
+
+/* Structure */
+
+.container1 {
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px;
+
+  background-color: rgb(26, 72, 137);
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr;
+    gap: 12em;
+    margin: 5em;
+    padding: 5em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
