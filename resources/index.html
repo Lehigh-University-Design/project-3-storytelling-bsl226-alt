@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- CSS Refs -->
+    <link type="text/css" href="../css/2styles.css" rel="stylesheet"/>
+
+    <!-- Title -->
+    <title>Kobe Bryant's Legendary Legacy</title>
+
+    <!-- Fonts -->
+
+    <!-- Georgia (OCT 22) -->
+    <link rel="stylesheet" href="https://use.typekit.net/hoe6fmr.css">
+
+    <!-- Helvetica -->
+    <link rel="stylesheet" href="https://use.typekit.net/cek2rem.css">
+</head>
+
+<body>
+    <!-- Content -->
+
+    <header>
+        <nav>
+            <div>
+                <img src="../images/kobe-seeklogo.svg" title="My Site"></img>
+                <h1><a href="../">"BLACK MAMBA"</a></h1>
+            </div>
+            
+            <div>
+                <button class="color" onclick="scrollToSection('section1')">1</button>
+                <button class="color" onclick="scrollToSection('section2')">2</button>
+                <button class="color" onclick="scrollToSection('section3')">3</button>
+                <button class="color" onclick="scrollToSection('section4')">4</button>
+                <button class="color" onclick="scrollToSection('section5')">5</button>
+                <button class="color" onclick="scrollToSection('section6')">6</button>
+                <button class="color" onclick="scrollToSection('section7')">7</button>
+                <button class="color" onclick="scrollToSection('section8')">8</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="section1">
+        <div class="image1">
+            <a href="/one/index.html">
+                <img src="../cards/2000CARD.png" alt="Section 1">
+            </a>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="image1">
+            <a href="/two/index.html">
+                <img src="../cards/2001CARD.png" alt="Section 2">
+            </a>
+        </div>
+    </div>
+
+    <div id="section3">
+        <div class="image1">
+            <img src="../cards/2002CARD.png" alt="Section 1">
+        </div>
+    </div>
+
+    <div id="section4">
+        <div class="image1">
+            <img src="../cards/2009CARD.png" alt="Section 1">
+        </div>
+    </div>
+
+    <div id="section5">
+        <div class="image1">
+            <img src="../cards/2010CARD.png" alt="Section 1">
+        </div>
+    </div>
+
+    <div id="section6">
+        <div class="image1">
+            <img src="../cards/RETIREMENT.png" alt="Section 1">
+        </div>
+    </div>
+
+    <div id="section7">
+        <div class="image1">
+            <img src="../cards/MM.png" alt="Section 1">
+        </div>
+    </div>
+
+    <div id="section8">
+        <div class="image1">
+            <img src="../cards/PASSING.png" alt="Section 1">
+        </div>
+    </div>
+    
+
+    <!-- Script -->
+    <script src="../js/script.js"></script>
+
+    <script>    
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

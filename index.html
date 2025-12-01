@@ -11,40 +11,83 @@
     <!-- Title -->
     <title>Kobe Bryant's Legendary Legacy</title>
 
-    <!--Work Sans (SEP 1)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
 
     <!-- Georgia (OCT 22) -->
     <link rel="stylesheet" href="https://use.typekit.net/hoe6fmr.css">
 
+    <!-- Helvetica -->
+    <link rel="stylesheet" href="https://use.typekit.net/cek2rem.css">
 </head>
 
 <body>
     <!-- Content -->
 
-    <header>
+    <!-- <header>
         <nav>
             <div>
-                <img src="./images/face.svg" title="My Site"></img>
+                <img src="./images/kobe-seeklogo.svg" title="My Site"></img>
                 <h1><a href="./">"LOGO"</a></h1>
             </div>
             
             <div>
                 <button class="Loomis" onclick="scrollToSection('section1')">IN-SEASON</button>
                 <button class="Features" onclick="scrollToSection('section2')">OFF-SEASON</button>
-                <!-- <button class="Examples" onclick="scrollToSection('section3')">EXAMPLES</button> -->
+                
             </div>
         </nav>
-    </header>
+    </header> -->
+
+    <div class="column"> 
+        <img src="images/KOBE.svg" alt="Kobe Bryant"></img>
+    </div>
+
+    <!-- <div class="one-column">
+        <div class="image1"> 
+            <img src="images/SILVER FOIL.png" alt="Silver Foil"></img>
+        </div>
+    </div> -->
+
+    <div class="one-column">
+        <div class="image1"> 
+            <a href="/resources/index.html">
+                <img src="images/SILVER FOIL.png" alt="Go to Subpage">
+            </a>
+        </div>
+    </div>
+
+    <!-- <h1>Kobe Bryant's Legendary Legacy</h1>
+    <p>This is a simple page dedicated to the life and achievements of Kobe Bryant.</p> -->
 
 
-    <h1>Kobe Bryant's Legendary Legacy</h1>
-    <p>This is a simple page dedicated to the life and achievements of Kobe Bryant.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Script -->
     <script src="js/script.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
 </body>
 
 </html>

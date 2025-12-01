@@ -9,7 +9,7 @@
 /* Main styles */
 
 body {
-    font-family: 'Work Sans', sans-serif; /* added font (SEP 7) */
+    font-family: 'Helvetica', sans-serif; 
     font-optical-sizing: auto;
     font-style: normal;
 
@@ -17,10 +17,43 @@ body {
     margin: 0;
 
     background-color: rgb(224, 221, 221);
-
+    background-image: url('../images/court.jpeg');
 }
 
 h1 {
+
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+#head h1 {
+    text-decoration: none;
+    font-size: 20em; /* larger, readable main title */
+    font-style: bold;
+    /* margin: 0.1rem 0 0 0; small top gap so h2 doesn't touch too closely */
+    color: rgb(0, 0, 0);
+    margin-top: -0.2em;
+
+}
+
+#head p {
+    text-decoration: none;
+    font-size: 3em; /* smaller subtitle size */
+    font-style: bold;
+    /* margin: 0 0 0.2rem 0; space below h2 toward h1 */
+    color: rgb(0, 0, 0);
+    /* letter-spacing: 0.08em; often nice for small caps-like subtitles */
+    text-transform: uppercase;
+    margin: 0.15em;
+    margin-left: 0.42em;
+
+    /* add a serif font */
+    font-family: 'Georgia', serif;
 
 }
 
@@ -30,7 +63,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #333;
-    padding: 1rem;
+    padding: 5px;
     box-shadow: 0 15px 5px rgba(0,0,0,0.1);
     z-index: 1000;
     
@@ -40,7 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
     gap: 0em;
 }
 
@@ -60,7 +93,7 @@ nav img {
 
 nav h1 {
     color: white;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 2em;
 }
 
@@ -115,7 +148,7 @@ nav button:hover {
     font-style: bold;
     padding: 0;
     color: white;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
 
 #section2 {
@@ -130,7 +163,7 @@ nav button:hover {
     font-style: bold;
     padding: 0;
     color: white;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
 
 .post {
@@ -145,6 +178,13 @@ nav button:hover {
     font-family: "Georgia", serif;
 }
 
+#head {
+    display: flex;
+    /* justify-content: center; */
+    margin: 50px;
+
+}
+
 /* Structure */
 
 .container1 {
@@ -155,16 +195,80 @@ nav button:hover {
   background-color: rgb(26, 72, 137);
 }
 
-.two-columns {
-    display: grid;
-    grid-template-columns: 2.5fr 2.5fr;
-    gap: 12em;
-    margin: 5em;
-    padding: 5em;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    border-radius: 8px;
+.column {
+  text-align: center;  /* Centers the image */
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+  padding: 10px;
 
-    justify-content: center;
-    align-content: center;
+}
+
+.column img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* Centers block-level image */
+}
+
+.one-column {
+    display: grid;
+    /* grid-template-columns: 2fr; */
+    margin: 10em;
+    padding: 5em;
+
+    /* min-height: 20vh;
+    background-color: #333333; */
+    border-radius: 8px;
     align-items: center;
+    justify-items: center;
+
+}
+
+.image1 { 
+    padding: 1em;
+    min-height: 20vh; /* vh = height of browser */
+    /* background-color: #333333; */
+    /* color: var(--background-color); */
+    border-radius: 8px;
+    align-items: center;
+    
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image1 img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.image1.animate {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.image1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove default image border in some browsers */
+.image1 a img {
+  border: none;
+}
+
+/* Optional: Add hover effect */
+.image1 a img:hover {
+opacity: 10.8;
+transition: opacity 0.3s;
 }
