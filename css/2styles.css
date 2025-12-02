@@ -67,7 +67,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     gap: 0em;
 }
 
@@ -81,7 +81,7 @@ nav img {
     /* display: inline-block; */
     align-self: left;
     width: auto;
-    height: 2em;
+    height: 2.5em;
     margin-right: 1em;  
     margin-left: 1em;
 }
@@ -277,29 +277,36 @@ nav button:hover {
     border-radius: 8px;
 }
 
+.image1 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        /* Prepare the element for smooth animations */
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        /* Transition on transform and opacity so it's applied both on hover and when .animate toggles */
+        transition: transform 400ms cubic-bezier(.2,.8,.2,1), opacity 500ms ease;
+}
+
 .image1 img:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+        /* Slightly smaller scale for a less jarring zoom */
+        transform: scale(1.08);
 }
 
 .image1.animate {
-    transform: translateY(0px);
-    opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
 }
 
 .image1 a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Remove default image border in some browsers */
 .image1 a img {
-  border: none;
-}
-
-/* Optional: Add hover effect */
-.image1 a img:hover {
-opacity: 10.8;
-transition: opacity 0.3s;
+    border: none;
+    /* ensure starting opacity is visible when element is active */
+    opacity: 1;
 }

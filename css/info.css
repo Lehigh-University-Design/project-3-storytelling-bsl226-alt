@@ -34,21 +34,32 @@ padding-bottom: 40px;
 
 .hero-section {
 /* background: linear-gradient(135deg, #f9a825 0%, #ff9800 100%); */
-padding: 20px;
-margin: 20px;
+padding: 10px;
+margin: 5px;
 text-align: center;
 }
 
 .hero-image {
-width: 100%;
-height: 200px;
-background-color: #666;
-margin-bottom: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #fff;
-font-size: 14px;
+    width: 800px;
+    height: 500px;
+    /* background-color: #666; */
+    margin: 0 auto 8px; /* center horizontally, keep bottom spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    max-width: 100%; /* responsive fallback */
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 1100px;    
+    height: 500px;
+    display: block;
+    margin: 0 auto; /* Centers block-level image */
+
+    padding: 10px;
+    background-color: #666;
 }
 
 .title {
@@ -67,8 +78,10 @@ margin: 50px;
 
 .stats-section {
 background-color: #9b8ec4;
-padding: 30px 20px;
-margin: 50px;
+padding: 30px;
+margin-top: 80px;
+margin-left: 50px;
+margin-right: 50px;
 }
 
 .stats-header {
@@ -160,8 +173,8 @@ margin: 40px;
 }
 
 .moment-image {
-width: 300px;
-height: 270px;
+width: 450px;
+height: 420px;
 background-color: #666;
 flex-shrink: 0;
 display: flex;
@@ -169,6 +182,14 @@ align-items: center;
 justify-content: center;
 color: #fff;
 font-size: 11px;
+
+margin: 50px;
+}
+
+.moment-image img {
+    max-width: 100%;
+    width: 450px;
+    height: 420px;
 }
 
 .moment-text {
