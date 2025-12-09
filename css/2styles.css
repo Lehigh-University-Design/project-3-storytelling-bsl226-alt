@@ -57,7 +57,7 @@ header {
     top: 0;
     /* background-color: #333; */
     background-color: #FAF9F6;
-    padding: 5px;
+    padding: 2px;
     box-shadow: 0 15px 5px rgba(0,0,0,0.1);
     z-index: 1000;
     
@@ -67,7 +67,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     gap: 0em;
 }
 
@@ -121,17 +121,38 @@ nav button:hover {
 
 nav button a {
     text-decoration: none;
-    color: white;
     font-family: "Helvetica", sans-serif;
-    font-size: 2em;
+    /* font-size: 2em; */
 
-    margin: 5em;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .color {
     background-color: black;
 }
+
+.color1 {
+    background-color: #773096;
+}
+
+/* Make anchor links with .color or .color1 match button sizing */
+nav a.color, nav a.color1 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black; /* default, overridden by .color1 below */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav a.color:hover, nav a.color1:hover {
+    background-color: rgb(224, 221, 221);
+}
+
+/* Ensure .color1 anchor uses its intended background */
+nav a.color1 { background-color: #773096; }
 
 
 /* Content Sections */
